@@ -66,8 +66,6 @@ RUN set -x \
 COPY qBittorrent.conf /default/qBittorrent.conf
 COPY entrypoint.sh /
 
-VOLUME ["/config", "/torrents", "/downloads"]
-
 ENV HOME=/home/qbittorrent
 
 USER qbittorrent
